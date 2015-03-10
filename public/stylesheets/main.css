@@ -1,3 +1,70 @@
+
 body {
-  padding-top: 70px;  /* Move body of page below navbar. */
+
+  font-family: 'Open Sans';
+  color: #999;
+  background-color: grey;
 }
+
+.navbar {
+  color: grey;
+  background-color: red;
+  font-size: 16px;
+}
+
+.section-1 {
+  color: gold;
+  background: url('thesesareus.jpg');
+  background-size: cover;
+  padding: 100px;
+}
+
+.section-1 h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: khaki;
+}
+
+.section-2 > h1 {
+  margin: 10px 20px 20px 20px;
+}
+
+.section-2 {
+  background-color: beige;
+  padding: 20px;
+
+}
+
+.well-color {
+  background-color: red;
+  color: grey;
+  padding: 40px;
+}
+
+.well ul {
+  list-style-type: none;
+
+}
+
+.well img {
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.section-3 {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: khaki;
+}
+
+img {
+  width: 100%;
+}
+

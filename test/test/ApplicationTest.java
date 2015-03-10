@@ -28,9 +28,49 @@ public class ApplicationTest {
    */
   @Test
   public void renderTemplate() {
-    Content html = views.html.Index.render("Welcome to the home page.");
+    Content html = views.html.Index.render();
     assertThat(contentType(html)).isEqualTo("text/html");
-    assertThat(contentAsString(html)).contains("home page");
+    assertThat(contentAsString(html)).contains("Welcome");
+  }
+
+  /**
+   * Tests that the Students/Parents template renders correctly.
+   */
+  @Test
+  public void renderStudentsParentsTemplate() {
+    Content html = views.html.StudentsParents.render();
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("Students");
+  }
+
+  /**
+   * Tests that the Faculty/Staff template renders correctly.
+   */
+  @Test
+  public void renderFacultyStaffTemplate() {
+    Content html = views.html.FacultyStaff.render();
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("Faculty");
+  }
+
+  /**
+   * Tests that the Alumni template renders correctly.
+   */
+  @Test
+  public void renderAlumniTemplate() {
+    Content html = views.html.Alumni.render();
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("Alumni");
+  }
+
+  /**
+   * Tests that the Contact Us template renders correctly.
+   */
+  @Test
+  public void renderContactUsTemplate() {
+    Content html = views.html.Contact.render();
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("Contact");
   }
 
 
